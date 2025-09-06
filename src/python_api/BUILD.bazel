@@ -1,0 +1,19 @@
+load("@rules_python//python:defs.bzl", "py_binary", "py_library")
+
+py_library(
+    name = "api_lib",
+    srcs = ["main.py"],
+    deps = [
+        "@pip//fastapi",           # Changed from @uv to @pip
+        "@pip//uvicorn",          # Changed from @uv to @pip
+        "@pip//sqlalchemy",       # Changed from @uv to @pip
+        "//src/first_project:calculator",
+    ],
+)
+
+py_binary(
+    name = "server",
+    srcs = ["main.py"],
+    deps = [":api_lib"],
+    main = "main.py",
+)
