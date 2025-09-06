@@ -22,6 +22,9 @@ sentry-sdk>=2.35.0
 # Data science and ML
 matplotlib>=3.7.0
 torch>=2.0.0
+torchvision
+tqdm
 pandas>=2.0.0
 numpy>=1.24.0
 polars>=0.20.0
+setuptools

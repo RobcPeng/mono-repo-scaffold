@@ -1,0 +1,15 @@
+load("@rules_python//python:defs.bzl", "py_library", "py_test")
+
+# Main library with your PyTorch utilities
+py_library(
+    name = "python_torch_utils",
+    srcs = [
+        "data_setup.py",
+        "engine.py", 
+        "model_builder.py",
+        "train.py",
+        "utils.py"
+    ],
+    visibility = ["//visibility:public"],  # Make it available to other packages
+)
+
