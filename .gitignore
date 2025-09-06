@@ -1,0 +1,57 @@
+# Bazel build outputs
+bazel-*
+/bazel-*
+
+# Bazel symlinks (these are created by Bazel and point to build outputs)
+bazel-bin
+bazel-out
+bazel-testlogs
+bazel-genfiles
+
+# Bazel internal directories
+.bazel
+.bazelrc.user
+
+# Module system lock file (auto-generated, but often committed)
+# MODULE.bazel.lock
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments (if you use them alongside Bazel)
+venv/
+env/
+.env
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build artifacts
+*.o
+*.a
+*.so
+
+# Test outputs
+test-reports/
+coverage/
+
+# Personal workspace files
+.workspace
+
+# Bazel remote cache credentials (if using remote build execution)
+.bazelrc.local
