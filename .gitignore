@@ -55,3 +55,5 @@ coverage/
 
 # Bazel remote cache credentials (if using remote build execution)
 .bazelrc.local
+
+repomix*
